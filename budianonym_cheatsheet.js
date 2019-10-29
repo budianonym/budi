@@ -277,3 +277,14 @@ connection.query(
 })
 
 connection.end()
+
+// git
+echo "# budi" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git config --global user.email "budianonym@gmail.com"
+git config --global user.name "budianonym"
+git commit -m "first commit"
+git remote add origin https://github.com/budianonym/budi.git
+git push -u origin master
