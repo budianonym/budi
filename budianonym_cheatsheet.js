@@ -289,3 +289,20 @@ git commit -m "first commit"
 git remote add origin https://github.com/budianonym/budi.git
 git push -u origin master
 11
+
+// read write data
+var fs = require("fs");
+
+var data = "New File Contents";
+
+fs.writeFile("temp.txt", data, (err) => {
+  if (err) console.log(err);
+  console.log("Successfully Written to File.");
+});
+
+
+var fs = require("fs");
+
+fs.readFile("temp.txt", "utf-8", (err, data) => {
+  console.log(data);
+});
