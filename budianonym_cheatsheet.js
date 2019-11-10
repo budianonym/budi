@@ -253,10 +253,10 @@ getNumberOfFollowers();
 //====================================== mysql ======================================\\
 var mysql = require('mysql')
 var connection = mysql.createConnection({
-  host: 'radbw2a-cluster.cluster-ro-cqyy7fkqd6u0.us-west-2.rds.amazonaws.com',
-  user: 'bhermawan',
-  password: 'lTNM0d6CS3Eb%7(_',
-  database: 'radb'
+  host: 'HOST',
+  user: 'USER',
+  password: 'PASS',
+  database: 'DB'
 })
 
 connection.connect()
