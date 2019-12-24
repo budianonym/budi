@@ -1,4 +1,4 @@
-//====================c================== Express ======================================\\
+//====================================== Express ======================================\\
 var express = require('express')
 var fs = require('fs');
 var app = express()
@@ -77,7 +77,7 @@ aa.replace(/(\r\n|\n|\r)/gm, '')
                 path: dataCookie[i].path
             })
 
-    })                      
+    })
 
 
 
@@ -186,7 +186,7 @@ function getNewToken(oAuth2Client, callback) {
  * @param {google.auth.OAuth2} auth An authorized OAuth2 client.
  */
 
-   
+
 
 
 function listLabels(auth) {
@@ -220,7 +220,7 @@ function listLabels(auth) {
 
 
   });
-  
+
 }
 
 
@@ -233,13 +233,13 @@ console.log(str.split('').reverse().join('').slice(0, 6).split('').reverse().joi
 
 
 
-//====================================== axios ======================================\\ 
+//====================================== axios ======================================\\
 const axios = require('axios');
 
 async function getNumberOfFollowers() {
-  
+
   let res = await axios.get('http://192.168.1.90:3000/');
-// console.log(res)  
+// console.log(res)
   let nOfFollowers = res.data.menu.id;
   // let location = res.data.location;
 
@@ -262,7 +262,7 @@ var connection = mysql.createConnection({
 connection.connect()
 
 connection.query(
-    `SELECT * FROM node  
+    `SELECT * FROM node
     where type = 'rental_property'
     order by nid
     desc
